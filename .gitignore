@@ -1,0 +1,128 @@
+# ============================================================
+# Secrets & environment variables — NEVER commit these
+# ============================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+.aws/
+.streamlit/secrets.toml
+
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+
+MANIFEST
+
+# ============================================================
+# Virtual environments
+# ============================================================
+venv/
+.venv/
+.env/
+
+
+# ============================================================
+# Jupyter Notebooks
+# ============================================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# ============================================================
+# Testing & coverage
+# ============================================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+nosetests.xml
+
+# ============================================================
+# Type checkers & linters
+# ============================================================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# ============================================================
+# IDE & editor files
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.cursor/
+
+# ============================================================
+# Logs
+# ============================================================
+*.log
+logs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ============================================================
+# RAG / ML artifacts (vector DBs, model caches, etc.)
+# ============================================================
+*.faiss
+*.pkl
+*.pickle
+chroma_db/
+chromadb/
+.chroma/
+qdrant_storage/
+weaviate_data/
+milvus_data/
+lancedb/
+*.duckdb
+
+# Model & embedding caches
+.cache/
+models/
+checkpoints/
+*.bin
+*.safetensors
+*.gguf
+*.onnx
+
+# Hugging Face cache
+.huggingface/
+hf_cache/
+
+# LangChain / LlamaIndex caches
+.langchain.db
+storage/
+persist/
+
+# ============================================================
+# Data files (uncomment if you don't want to track datasets)
+# ============================================================
+# data/
+# *.csv
+# *.parquet
+# *.json
+# *.jsonl
+
+# ============================================================
+# OS-specific
+# ============================================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
